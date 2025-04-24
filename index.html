@@ -22,13 +22,22 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hey there! I'm Keandra Taylor - a tech enthusiast with a growing passion for working with data, databases, and technology solutions. I'm currently developing my skills in SQL, Python, and IT systems while completing my degree in Computer Science.</p>
+        <p>Hey there! I'm Keandra, a tech enthusiast with a passion for learning and improving in areas like data, databases, and technology. Whether it's diving into SQL or exploring the world of Python, I am always looking for opportunities to grow and apply my skills in new ways. I'm currently pursuing my degree in Computer Science and am excited to continue developing my abilities to contribute to various tech roles.</p>
     </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <a href="projects.html" class="btn">Projects</a>
+    <section id="explore">
+        <h2>Explore My Work</h2>
+        <div class="slideshow-container">
+            <img class="slide" src="Database-creationpreview.png" style="display:block;">
+            <img class="slide" src="RM-Piechart.png" style="display:none;">
+            <img class="slide" src="Inserting Values.png" style="display:none;">
+            <img class="slide" src="Built Webite.png" style="display:none;">
+        </div>
+        <div class="center-button">
+            <a href="projects.html" class="btn">View Full Projects</a>
+        </div>
     </section>
+    
 
     <section id="contact">
         <h2>Contact Me</h2>
@@ -38,6 +47,23 @@
     <footer>
         <p>&copy; 2025 Keandra Taylor. All rights reserved.</p>
     </footer>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("slide");
+    
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    
+        showSlides();
+    </script>
+    
 </body>
 </html>
-
