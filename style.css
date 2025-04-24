@@ -128,3 +128,36 @@ footer {
     font-size: 0.9rem;
     margin-top: 2rem;
 }
+
+/* Slideshow Section */
+.slideshow-container {
+    max-width: 800px;
+    height: 500px; /* Set a fixed height */
+    margin: 2rem auto;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    background-color: #f0f0f0; /* fallback color in case of delay */
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* This will crop images to fit but keep aspect ratio */
+    display: none;
+    border-radius: 15px;
+}
+
+
+.center-button {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+#explore h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #000;
+}
